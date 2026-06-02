@@ -12,7 +12,7 @@
 
 Modern web monorepo template with Turborepo, TypeScript, Hono, and React — ready for AI-powered apps.
 
-![Example Image](docs\stack-dark.png)
+![Example Image](docs/stack-dark.png)
 
 ## Features
 
