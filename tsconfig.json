@@ -1,0 +1,3 @@
+{
+  "extends": "@modern-web-starter/config/tsconfig.base.json"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@modern-web-starter/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "bun run src/migrate.ts"
+  },
+  "dependencies": {
+    "@modern-web-starter/env": "workspace:*",
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.2",
+    "drizzle-zod": "^0.8.3",
+    "vitest": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@modern-web-starter/config": "workspace:*",
+    "@types/ws": "^8.18.1",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "catalog:",
+    "ws": "^8.21.0"
+  }
+}

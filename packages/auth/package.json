@@ -1,0 +1,29 @@
+{
+  "name": "@modern-web-starter/auth",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@better-auth/drizzle-adapter": "^1.6.13",
+    "@modern-web-starter/db": "workspace:*",
+    "@modern-web-starter/env": "workspace:*",
+    "@modern-web-starter/mail": "workspace:*",
+    "bcryptjs": "^3.0.3",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@modern-web-starter/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
