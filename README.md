@@ -70,7 +70,15 @@ POSTMARK_FROM_EMAIL=your-email
 
 ## Getting Started
 
-First, install the dependencies:
+First, initialize the template with your new project name:
+
+```bash
+bun run init
+```
+
+This will prompt you for a new project name (e.g., `my-app` or `@scope/name`), then update all references across the codebase — workspace scope (`@modern-web-starter/*`), root package name, Alchemy app name, display strings, and GitHub URLs (auto-detected from `git remote get-url origin`) — and regenerate `bun.lock`. The script is idempotent at the file level and safe to inspect with `git diff` afterwards.
+
+Then, install the dependencies:
 
 ```bash
 bun install
@@ -144,6 +152,7 @@ modern-web-starter/
 
 ## Available Scripts
 
+- `bun run init`: Rename the template to a new project name (run once after cloning)
 - `bun run dev`: Start all applications in development mode
 - `bun run build`: Build all applications
 - `bun run dev:web`: Start only the web application

@@ -1,3 +1,6 @@
 {
-  "extends": "@modern-web-starter/config/tsconfig.base.json"
+  "extends": "@modern-web-starter/config/tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node", "@cloudflare/workers-types", "bun-types"]
+  }
 }
