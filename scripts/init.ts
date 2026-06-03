@@ -9,6 +9,7 @@ const OLD_NAME = "modern-web-starter";
 const OLD_ORG_REPO = "fgbyte/modern-web-starter";
 const MARKER = "INIT_SCRIPT_DO_NOT_REPLACE";
 const SCRIPT_FILENAME = "init.ts";
+const SPINNER_FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
 
 const SKIP_DIRS = new Set<string>([
   "node_modules",
@@ -329,36 +330,52 @@ async function main(): Promise<void> {
   }
 
   process.stdout.write(
-    `\nModified ${modified} files (${totalChanges} total changes). Skipped ${skipped} files.\n`,
+    `\n\u2705 Modified ${modified} files (${totalChanges} total changes). Skipped ${skipped} files.\n`,
   );
 
-  process.stdout.write("\nRunning 'bun install' to regenerate lockfile...\n\n");
+  process.stdout.write("\nRunning 'bun install' to regenerate lockfile...\n");
+
+  let spinnerIndex = 0;
+  const spinnerInterval = setInterval(() => {
+    process.stdout.write(
+      `\r${SPINNER_FRAMES[spinnerIndex % SPINNER_FRAMES.length]} Installing dependencies...`,
+    );
+    spinnerIndex++;
+  }, 80);
+
+  const stopSpinner = (): void => {
+    clearInterval(spinnerInterval);
+    process.stdout.write("\r\x1b[K");
+  };
+
   try {
     await $`bun install`.quiet();
-    process.stdout.write("Lockfile regenerated.\n\n");
+    stopSpinner();
+    process.stdout.write("\u2705 Lockfile regenerated.\n\n");
   } catch (e) {
+    stopSpinner();
     process.stdout.write(
-      "Warning: 'bun install' failed. You may need to run it manually.\n",
+      "\u26A0\uFE0F 'bun install' failed. You may need to run it manually.\n",
     );
     process.stdout.write(`${(e as Error).message}\n\n`);
   }
 
-  process.stdout.write("Done!\n\n");
+  process.stdout.write("\u{1F389} Done! Your project has been renamed.\n\n");
   process.stdout.write("Next steps:\n");
   process.stdout.write(
-    "  1. Review the changes with 'git diff' to verify everything looks correct\n",
+    "  \u{1F50D} 1. Review the changes with 'git diff' to verify everything looks correct\n",
   );
   process.stdout.write(
-    "  2. Update your .env files with environment-specific values\n",
+    "  \u{2699}\uFE0F  2. Update your .env files with environment-specific values\n",
   );
   process.stdout.write(
-    "  3. Run 'bun run check-types' to verify TypeScript compiles\n",
+    "  \u{2705} 3. Run 'bun run check-types' to verify TypeScript compiles\n",
   );
   process.stdout.write(
-    "  4. (Optional) Update the 'author' field in package.json\n",
+    "  \u{270F}\uFE0F 4. (Optional) Update the 'author' field in package.json\n",
   );
   process.stdout.write(
-    "  5. Commit: 'git add -A && git commit -m \"Initialize from template\"'\n",
+    "  \u{1F4E6} 5. Commit: 'git add -A && git commit -m \"Initialize from template\"'\n",
   );
 }
 
