@@ -8,6 +8,5 @@ export const env = {
   BETTER_AUTH_URL: "http://localhost:3000",
   POSTMARK_SERVER_TOKEN: "test-token",
   POSTMARK_FROM_EMAIL: "test@test.com",
-  GEMINI_API_KEY: "test-api-key",
   VITE_SERVER_URL: "http://localhost:3000",
 };

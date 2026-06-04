@@ -8,11 +8,6 @@ vi.mock("cloudflare:workers", () => ({
     BETTER_AUTH_URL: "http://localhost:3000",
     POSTMARK_SERVER_TOKEN: "test-token",
     POSTMARK_FROM_EMAIL: "test@test.com",
-    GEMINI_API_KEY: "test-api-key",
-    AI_PROVIDER_API_KEY: "test-nvidia-key",
-    AI_PROVIDER_BASE_URL: "https://integrate.api.nvidia.com/v1",
-    AI_TEXT_MODEL: "google/gemma-3n-e4b-it",
-    AI_VISION_MODEL: "google/gemma-3n-e4b-it",
     VITE_SERVER_URL: "http://localhost:3000",
   },
 }));
