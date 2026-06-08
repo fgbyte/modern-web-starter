@@ -17,7 +17,7 @@
     "@modern-web-starter/db": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
     "@modern-web-starter/mail": "workspace:*",
-    "@scalar/hono-api-reference": "^0.10.19",
+    "@scalar/hono-api-reference": "^0.10.20",
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "hono": "catalog:",
