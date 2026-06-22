@@ -69,8 +69,8 @@
     "@types/node": "catalog:",
     "bun-types": "catalog:",
     "open-cli": "^9.0.0",
-    "oxfmt": "^0.54.0",
-    "oxlint": "^1.69.0",
+    "oxfmt": "^0.55.0",
+    "oxlint": "^1.70.0",
     "turbo": "^2.9.18",
     "typescript": "catalog:"
   },
