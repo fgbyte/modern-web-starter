@@ -23,7 +23,7 @@
       "zod": "^4.4.3",
       "hono": "^4.12.25",
       "typescript": "^6.0.3",
-      "@types/node": "^25.9.3",
+      "@types/node": "^26.0.0",
       "@cloudflare/workers-types": "^4.20260511.1",
       "bun-types": "^1.3.14",
       "better-auth": "^1.6.18",
