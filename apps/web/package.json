@@ -59,7 +59,7 @@
     "@vitest/ui": "catalog:",
     "alchemy": "catalog:",
     "jsdom": "catalog:",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.16",
     "tailwindcss": "^4.3.0",
     "typescript": "catalog:",
     "vite": "^8.1.0",
