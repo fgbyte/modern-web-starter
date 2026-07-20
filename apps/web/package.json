@@ -60,7 +60,7 @@
     "alchemy": "catalog:",
     "jsdom": "catalog:",
     "postcss": "^8.5.17",
-    "tailwindcss": "^4.3.0",
+    "tailwindcss": "^4.3.3",
     "typescript": "catalog:",
     "vite": "^8.1.4",
     "vitest": "catalog:"
