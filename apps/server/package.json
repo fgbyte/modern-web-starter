@@ -9,8 +9,8 @@
     "test": "bunx vitest run --config vitest.config.ts"
   },
   "dependencies": {
-    "@hono/zod-openapi": "^1.4.0",
-    "@hono/zod-validator": "^0.8.0",
+    "@hono/zod-openapi": "^1.5.1",
+    "@hono/zod-validator": "^0.9.0",
     "@langchain/core": "^1.2.2",
     "@langchain/openai": "^1.5.5",
     "@modern-web-starter/auth": "workspace:*",
