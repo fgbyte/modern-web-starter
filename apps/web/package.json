@@ -18,7 +18,7 @@
     "@hookform/resolvers": "^5.4.0",
     "@modern-web-starter/auth": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.3",
     "@tanstack/react-form": "^1.33.1",
     "@tanstack/react-query": "^5.101.2",
     "@tanstack/react-query-devtools": "^5.101.2",
