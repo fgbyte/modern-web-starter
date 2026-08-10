@@ -9,15 +9,15 @@
     "test": "bunx vitest run --config vitest.config.ts"
   },
   "dependencies": {
-    "@hono/zod-openapi": "^1.5.1",
+    "@hono/zod-openapi": "^1.5.2",
     "@hono/zod-validator": "^0.9.0",
-    "@langchain/core": "^1.2.4",
-    "@langchain/openai": "^1.5.5",
+    "@langchain/core": "^1.2.5",
+    "@langchain/openai": "^1.5.6",
     "@modern-web-starter/auth": "workspace:*",
     "@modern-web-starter/db": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
     "@modern-web-starter/mail": "workspace:*",
-    "@scalar/hono-api-reference": "^0.11.12",
+    "@scalar/hono-api-reference": "^0.11.13",
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "hono": "catalog:",
@@ -35,6 +35,6 @@
     "typescript": "catalog:",
     "unrun": "^0.3.1",
     "vitest": "catalog:",
-    "wrangler": "^4.116.0"
+    "wrangler": "^4.119.0"
   }
 }
