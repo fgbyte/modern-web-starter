@@ -35,6 +35,6 @@
     "typescript": "catalog:",
     "unrun": "^0.3.1",
     "vitest": "catalog:",
-    "wrangler": "^4.119.0"
+    "wrangler": "^4.123.0"
   }
 }
