@@ -13,7 +13,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "@better-auth/drizzle-adapter": "^1.7.1",
+    "@better-auth/drizzle-adapter": "^1.7.2",
     "@modern-web-starter/db": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
     "@modern-web-starter/mail": "workspace:*",
