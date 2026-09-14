@@ -12,7 +12,7 @@
     "@hono/zod-openapi": "^1.6.3",
     "@hono/zod-validator": "^0.9.0",
     "@langchain/core": "^1.2.9",
-    "@langchain/openai": "^1.5.11",
+    "@langchain/openai": "^1.5.13",
     "@modern-web-starter/auth": "workspace:*",
     "@modern-web-starter/db": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
