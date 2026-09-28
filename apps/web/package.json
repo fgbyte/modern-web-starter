@@ -20,9 +20,9 @@
     "@modern-web-starter/env": "workspace:*",
     "@tailwindcss/vite": "^4.3.3",
     "@tanstack/react-form": "^1.33.5",
-    "@tanstack/react-query": "^5.103.1",
-    "@tanstack/react-query-devtools": "^5.103.1",
-    "@tanstack/react-router": "^1.170.38",
+    "@tanstack/react-query": "^5.103.3",
+    "@tanstack/react-query-devtools": "^5.103.3",
+    "@tanstack/react-router": "^1.170.39",
     "@tanstack/react-store": "^0.11.1",
     "@tanstack/store": "^0.11.0",
     "better-auth": "catalog:",
@@ -62,7 +62,7 @@
     "postcss": "^8.5.28",
     "tailwindcss": "^4.3.0",
     "typescript": "catalog:",
-    "vite": "^8.3.0",
+    "vite": "^8.3.1",
     "vitest": "catalog:"
   }
 }
