@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@modern-web-starter/env": "workspace:*",
-    "@neondatabase/serverless": "^1.1.0",
+    "@neondatabase/serverless": "^1.2.0",
     "dotenv": "catalog:",
     "drizzle-orm": "^0.45.3",
     "drizzle-zod": "^0.8.3",
