@@ -11,13 +11,13 @@
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",
     "@hono/zod-validator": "^0.9.0",
-    "@langchain/core": "^1.2.12",
-    "@langchain/openai": "^1.5.13",
+    "@langchain/core": "^1.2.14",
+    "@langchain/openai": "^1.6.2",
     "@modern-web-starter/auth": "workspace:*",
     "@modern-web-starter/db": "workspace:*",
     "@modern-web-starter/env": "workspace:*",
     "@modern-web-starter/mail": "workspace:*",
-    "@scalar/hono-api-reference": "^0.12.6",
+    "@scalar/hono-api-reference": "^0.12.9",
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "hono": "catalog:",
@@ -35,6 +35,6 @@
     "typescript": "catalog:",
     "unrun": "^0.3.1",
     "vitest": "catalog:",
-    "wrangler": "^4.139.0"
+    "wrangler": "^4.146.0"
   }
 }
