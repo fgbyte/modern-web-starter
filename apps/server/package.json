@@ -11,7 +11,7 @@
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",
     "@hono/zod-validator": "^0.9.0",
-    "@langchain/core": "^1.2.12",
+    "@langchain/core": "^1.2.14",
     "@langchain/openai": "^1.5.13",
     "@modern-web-starter/auth": "workspace:*",
     "@modern-web-starter/db": "workspace:*",
