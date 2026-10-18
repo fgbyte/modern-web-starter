@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "form-data": "^4.0.6",
-    "postmark": "^4.0.7"
+    "postmark": "^5.1.0"
   },
   "devDependencies": {
     "@modern-web-starter/config": "workspace:*",
